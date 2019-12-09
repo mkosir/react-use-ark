@@ -1,6 +1,6 @@
 {
   "name": "react-use-ark",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Hook to easily access ARK blockchain Ѧ API in React application",
   "main": "./dist/react-use-ark.umd.js",
   "module": "./dist/react-use-ark.es5.js",

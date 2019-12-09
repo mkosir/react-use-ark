@@ -1,4 +1,3 @@
-// react-use-ark
 import {
   useBlocksLatest,
   useBlocksLast,
@@ -12,9 +11,6 @@ import {
 } from './react-use-ark/useTransactions/useTransactions';
 import { useWalletsTop, useWalletsFindByAddress } from './react-use-ark/useWallets/useWallets';
 
-// common
-import { Network } from './common/network';
-
 export {
   useBlocksLatest,
   useBlocksLast,
@@ -26,5 +22,4 @@ export {
   useTransactionsFindByBlockId,
   useWalletsTop,
   useWalletsFindByAddress,
-  Network,
 };

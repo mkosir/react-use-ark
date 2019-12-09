@@ -1,0 +1,44 @@
+#root {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+  .react-tabs {
+    .demo.react-tabs__tab-panel--selected {
+      margin-top: 2vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.find {
+  font-size: 1.07em;
+  input {
+    font-size: 1em;
+    margin: 0px 10px;
+  }
+}
+
+button.fetch {
+  font-size: 1.07em;
+}
+
+ol.list {
+  font-size: 1em;
+  li {
+    margin-bottom: 25px;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      div:first-of-type {
+        font-weight: bold;
+        margin-right: 40px;
+        min-width: 130px;
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 # ![ark logo](ark.png) react-use-ark
 
-[![npm version][npm-badge]][npm-url]
-[![npm bundle size][size-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
+[![npm version][npm-badge]][npm-url]
+[![TypeScript][typescript-badge]][typescript-url]
 
 _React hook to easily access [ARK blockchain Ѧ](https://ark.io/) API._
 
@@ -97,6 +97,7 @@ There are many [endpoints](https://api.ark.dev/) to cover and hooks to be create
 
 [npm-url]: https://www.npmjs.com/package/react-use-ark
 [npm-badge]: https://img.shields.io/npm/v/react-use-ark.svg
-[size-badge]: https://img.shields.io/bundlephobia/minzip/react-use-ark.svg
 [build-badge]: https://travis-ci.com/mkosir/react-use-ark.svg
 [build-url]: https://travis-ci.com/mkosir/react-use-ark
+[typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101
+[typescript-url]: https://github.com/microsoft/TypeScript

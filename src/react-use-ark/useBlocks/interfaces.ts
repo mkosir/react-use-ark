@@ -1,5 +1,5 @@
 import { BigNumber } from '../../common/BigNumber';
-import { ITransaction } from '../useTransactions/types';
+import { ITransaction } from '../useTransactions/interfaces';
 import { ITimestamp, IResponse, IArrayResponse } from '../../common/interfaces';
 
 export interface IBlocksResponse extends IArrayResponse<IBlock> {}

@@ -1,5 +1,5 @@
 import { BigNumber } from '../../common/BigNumber';
-import { IBlock } from '../block/types';
+import { IBlock } from '../useBlocks/interfaces';
 import { ForgingStatus } from '../../common/enums';
 import { IArrayResponse } from '../../common/interfaces';
 

@@ -1,6 +1,6 @@
 import { useFetchARK } from '../../utils/useFetchARK';
 import { Network } from '../../common/network';
-import { IWalletResponse, IWalletsResponse } from './types';
+import { IWalletResponse, IWalletsResponse } from './interfaces';
 
 export const useWalletsTop = (
   page: number = 1,

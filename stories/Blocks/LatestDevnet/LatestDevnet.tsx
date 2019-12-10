@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { useBlocksLatest } from '../../../src';
-import { Network } from '../../../src/common/network';
+import { useBlocksLatest, Network } from '../../../src';
 
 const LatestDevnet = () => {
   const [{ response, isLoading, error }] = useBlocksLatest(1, 10, true, Network.DEVNET);

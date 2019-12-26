@@ -12,7 +12,7 @@ ARK blockchain explorer [official website](https://explorer.ark.io/).
 
 ## Demo
 
-**[Live demo & Code examples](https://mkosir.github.io/react-use-ark)**
+**[Live demo & Code examples](https://mkosir.github.io/react-use-ark)** created with [StoryTab 📑](https://github.com/mkosir/story-tab)
 
 ## Install
 

@@ -1,6 +1,6 @@
 import { useFetchARK } from '../../utils/useFetchARK';
 import { Network } from '../../common/network';
-import { IBlockResponse, IBlocksResponse } from './types';
+import { IBlockResponse, IBlocksResponse } from './interfaces';
 
 /**
  * Get latest blocks.

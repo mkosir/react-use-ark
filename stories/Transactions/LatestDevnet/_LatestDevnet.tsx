@@ -5,8 +5,7 @@ import Demo from './LatestDevnet.storytab';
 
 const code = `import React from 'react';
 
-import { useTransactionsLatest } from '../../../src';
-import { Network } from '../../../src/common/network';
+import { useTransactionsLatest, Network } from '../../../src';
 
 const LatestDevnet = () => {
   const [{ response, isLoading, error }] = useTransactionsLatest(1, 10, true, Network.DEVNET);

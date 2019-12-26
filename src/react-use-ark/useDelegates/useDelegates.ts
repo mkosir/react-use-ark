@@ -1,7 +1,7 @@
 import { useFetchAll } from './useFetchAll';
 import { useFetchARK } from '../../utils/useFetchARK';
 import { Network } from '../../common/network';
-import { IDelegatesResponse, IDelegate } from './types';
+import { IDelegatesResponse, IDelegate } from './interfaces';
 
 export const useDelegatesAll = (
   fetchOnMount: boolean = false,

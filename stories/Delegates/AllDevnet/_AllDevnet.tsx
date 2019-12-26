@@ -5,8 +5,7 @@ import Demo from './AllDevnet.storytab';
 
 const code = `import React from 'react';
 
-import { useDelegatesAll } from '../../../src';
-import { Network } from '../../../src/common/network';
+import { useDelegatesAll, Network } from '../../../src';
 
 const AllDevnet = () => {
   const [{ response, isLoading, error }] = useDelegatesAll(true, Network.DEVNET);

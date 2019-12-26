@@ -1,6 +1,6 @@
 import { useFetchARK } from '../../utils/useFetchARK';
 import { Network } from '../../common/network';
-import { ITransactionsResponse, ITransactionResponse } from './types';
+import { ITransactionsResponse, ITransactionResponse } from './interfaces';
 
 /**
  * Get latest transactions.

@@ -1,15 +1,14 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './AllDevnet';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Top10.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
-import { useDelegatesAll } from '../../../src';
-import { Network } from '../../../src/common/network';
+import { useDelegatesTop } from '../../../src';
 
-const AllDevnet = () => {
-  const [{ response, isLoading, error }] = useDelegatesAll(true, Network.DEVNET);
+const Top10 = () => {
+  const [{ response, isLoading, error }] = useDelegatesTop(1, 10, true);
 
   return (
     <>
@@ -19,7 +18,7 @@ const AllDevnet = () => {
       ) : (
         response && (
           <ol className="list">
-            {response.map(delegate => (
+            {response.data.map(delegate => (
               <li key={delegate.username}>
                 <div>
                   <div>Username: </div>
@@ -50,12 +49,13 @@ const AllDevnet = () => {
   );
 };
 
-export default AllDevnet;`;
+export default Top10;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Top10 = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Top10;

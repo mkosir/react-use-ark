@@ -1,26 +1,19 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './FindByBlockId';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './LatestDevnet.storytab';
 
-const jsx = `import React, { useState } from 'react';
+const code = `import React from 'react';
 
-import { useTransactionsFindByBlockId } from '../../../src';
+import { useTransactionsLatest } from '../../../src';
+import { Network } from '../../../src/common/network';
 
-const FindByBlockId = () => {
-  const [id, setId] = useState('d9f8857e7b8336e24bc5cddf4326720772e9215874d022de46ae268e65d27de6');
-  const [{ response, isLoading, error }, fetch] = useTransactionsFindByBlockId(id, 1, 20, true);
+const LatestDevnet = () => {
+  const [{ response, isLoading, error }] = useTransactionsLatest(1, 10, true, Network.DEVNET);
 
   return (
     <>
-      <div className="find">
-        Block ID:
-        <input type="text" value={id} onChange={ev => setId(ev.target.value)} />
-        <button className="fetch" onClick={fetch}>
-          Find
-        </button>
-      </div>
-      {error && <div>Error fetching data: {error}</div>}
+      {error && <div>Error fetching data</div>}
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -61,12 +54,13 @@ const FindByBlockId = () => {
   );
 };
 
-export default FindByBlockId;`;
+export default LatestDevnet;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _LatestDevnet = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _LatestDevnet;

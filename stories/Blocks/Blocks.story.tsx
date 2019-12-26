@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Latest from './Latest/_StorybookTabs';
-import Latest10 from './Latest10/_StorybookTabs';
-import LatestDevnet from './LatestDevnet/_StorybookTabs';
-import Last from './Last/_StorybookTabs';
-import FindById from './FindById/_StorybookTabs';
+import Latest from './Latest/_Latest';
+import Latest10 from './Latest10/_Latest10';
+import LatestDevnet from './LatestDevnet/_LatestDevnet';
+import Last from './Last/_Last';
+import FindById from './FindById/_FindById';
 
 const stories = storiesOf('Blocks', module);
 

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './Latest10';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Last.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
-import { useBlocksLatest } from '../../../src';
+import { useBlocksLast } from '../../../src';
 
-const Latest10 = () => {
-  const [{ response, isLoading, error }] = useBlocksLatest(1, 10, true);
+const Last = () => {
+  const [{ response, isLoading, error }] = useBlocksLast(true);
 
   return (
     <>
@@ -41,12 +41,13 @@ const Latest10 = () => {
   );
 };
 
-export default Latest10;`;
+export default Last;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Last = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Last;

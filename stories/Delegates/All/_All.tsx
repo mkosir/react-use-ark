@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './All';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './All.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useDelegatesAll } from '../../../src';
 
@@ -49,12 +49,13 @@ const All = () => {
   );
 };
 
-export default All;`;
+export default All;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _All = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _All;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Top from './Top/_StorybookTabs';
-import FindByAddress from './FindByAddress/_StorybookTabs';
+import Top from './Top/_Top';
+import FindByAddress from './FindByAddress/_FindByAddress';
 
 const stories = storiesOf('Wallets', module);
 

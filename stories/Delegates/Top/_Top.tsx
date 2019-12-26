@@ -1,17 +1,20 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './Top10';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Top.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useDelegatesTop } from '../../../src';
 
-const Top10 = () => {
-  const [{ response, isLoading, error }] = useDelegatesTop(1, 10, true);
+const Top = () => {
+  const [{ response, isLoading, error }, fetch] = useDelegatesTop();
 
   return (
     <>
+      <button className="fetch" onClick={fetch}>
+        Fetch
+      </button>
       {error && <div>Error fetching data</div>}
       {isLoading ? (
         <div>Loading...</div>
@@ -49,12 +52,13 @@ const Top10 = () => {
   );
 };
 
-export default Top10;`;
+export default Top;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Top = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Top;

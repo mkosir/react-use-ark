@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './LatestDevnet';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './LatestDevnet.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useBlocksLatest } from '../../../src';
 import { Network } from '../../../src/common/network';
@@ -39,12 +39,13 @@ const LatestDevnet = () => {
   );
 };
 
-export default LatestDevnet;`;
+export default LatestDevnet;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _LatestDevnet = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _LatestDevnet;

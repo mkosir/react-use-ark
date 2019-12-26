@@ -1,27 +1,25 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './Top';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './AllDevnet.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
-import { useDelegatesTop } from '../../../src';
+import { useDelegatesAll } from '../../../src';
+import { Network } from '../../../src/common/network';
 
-const Top = () => {
-  const [{ response, isLoading, error }, fetch] = useDelegatesTop();
+const AllDevnet = () => {
+  const [{ response, isLoading, error }] = useDelegatesAll(true, Network.DEVNET);
 
   return (
     <>
-      <button className="fetch" onClick={fetch}>
-        Fetch
-      </button>
       {error && <div>Error fetching data</div>}
       {isLoading ? (
         <div>Loading...</div>
       ) : (
         response && (
           <ol className="list">
-            {response.data.map(delegate => (
+            {response.map(delegate => (
               <li key={delegate.username}>
                 <div>
                   <div>Username: </div>
@@ -52,12 +50,13 @@ const Top = () => {
   );
 };
 
-export default Top;`;
+export default AllDevnet;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _AllDevnet = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _AllDevnet;

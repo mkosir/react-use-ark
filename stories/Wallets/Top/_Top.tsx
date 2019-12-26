@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './Top';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Top.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useWalletsTop } from '../../../src';
 
@@ -48,12 +48,13 @@ const Top = () => {
   );
 };
 
-export default Top;`;
+export default Top;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Top = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Top;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Top from './Top/_StorybookTabs';
-import Top10 from './Top10/_StorybookTabs';
-import All from './All/_StorybookTabs';
-import AllDevnet from './AllDevnet/_StorybookTabs';
+import Top from './Top/_Top';
+import Top10 from './Top10/_Top10';
+import All from './All/_All';
+import AllDevnet from './AllDevnet/_AllDevnet';
 
 const stories = storiesOf('Delegates', module);
 

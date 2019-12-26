@@ -1,19 +1,23 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './LatestDevnet';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Latest10.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useTransactionsLatest } from '../../../src';
-import { Network } from '../../../src/common/network';
 
-const LatestDevnet = () => {
-  const [{ response, isLoading, error }] = useTransactionsLatest(1, 10, true, Network.DEVNET);
+const Latest10 = () => {
+  const [{ response, isLoading, error }] = useTransactionsLatest(1, 10, true);
 
   return (
     <>
-      {error && <div>Error fetching data</div>}
+      {error && (
+        <div>
+          <div>Error fetching data</div>
+          <div>{error}</div>
+        </div>
+      )}
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -54,12 +58,13 @@ const LatestDevnet = () => {
   );
 };
 
-export default LatestDevnet;`;
+export default Latest10;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Latest10 = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Latest10;

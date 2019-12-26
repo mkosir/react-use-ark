@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './FindByAddress';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './FindByAddress.storytab';
 
-const jsx = `import React, { useState } from 'react';
+const code = `import React, { useState } from 'react';
 
 import { useWalletsFindByAddress } from '../../../src';
 
@@ -52,12 +52,13 @@ const FindByAddress = () => {
   );
 };
 
-export default FindByAddress;`;
+export default FindByAddress;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _FindByAddress = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _FindByAddress;

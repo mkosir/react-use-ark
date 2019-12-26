@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './FindById';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './FindById.storytab';
 
-const jsx = `import React, { useState } from 'react';
+const code = `import React, { useState } from 'react';
 
 import { useTransactionsFindById } from '../../../src';
 
@@ -56,12 +56,13 @@ const FindById = () => {
   );
 };
 
-export default FindById;`;
+export default FindById;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _FindById = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _FindById;

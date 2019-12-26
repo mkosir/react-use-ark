@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './Latest';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './Latest.storytab';
 
-const jsx = `import React from 'react';
+const code = `import React from 'react';
 
 import { useBlocksLatest } from '../../../src';
 
@@ -41,12 +41,13 @@ const Latest = () => {
   );
 };
 
-export default Latest;`;
+export default Latest;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _Latest = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _Latest;

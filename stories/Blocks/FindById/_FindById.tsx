@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StorybookTabComponent from '../../_StorybookTabComponent/StorybookTabComponent';
-import Demo from './FindById';
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './FindById.storytab';
 
-const jsx = `import React, { useState } from 'react';
+const code = `import React, { useState } from 'react';
 
 import { useBlocksFindById } from '../../../src';
 
@@ -37,6 +37,22 @@ const FindById = () => {
               <div>Timestamp: </div>
               <div>{response.data.timestamp.human}</div>
             </div>
+            <div>
+              <div>Forged Amount: </div>
+              <div>{response.data.forged.amount}</div>
+            </div>
+            <div>
+              <div>Forged Fee: </div>
+              <div>{response.data.forged.fee}</div>
+            </div>
+            <div>
+              <div>Forged Reward: </div>
+              <div>{response.data.forged.reward}</div>
+            </div>
+            <div>
+              <div>Forged Total: </div>
+              <div>{response.data.forged.total}</div>
+            </div>
           </li>
         </ol>
       )}
@@ -44,12 +60,13 @@ const FindById = () => {
   );
 };
 
-export default FindById;`;
+export default FindById;
+`;
 
-const StorybookTabs = () => (
-  <StorybookTabComponent jsx={jsx}>
+const _FindById = () => (
+  <StoryTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StorybookTabComponent>
+  </StoryTabTemplate>
 );
 
-export default StorybookTabs;
+export default _FindById;

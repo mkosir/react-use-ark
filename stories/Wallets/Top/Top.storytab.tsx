@@ -24,7 +24,7 @@ const Top = () => {
                 </div>
                 <div>
                   <div>Balance: </div>
-                  <div>{wallet.balance}</div>
+                  <div>Ѧ {wallet.balance}</div>
                 </div>
                 <div>
                   <div>Is delegate: </div>

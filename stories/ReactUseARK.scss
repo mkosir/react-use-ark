@@ -28,6 +28,7 @@ button.fetch {
 ol.list {
   font-size: 1em;
   li {
+    word-break: break-all;
     margin-bottom: 25px;
     div {
       display: flex;

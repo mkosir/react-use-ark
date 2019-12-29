@@ -30,7 +30,7 @@ const FindByAddress = () => {
             </div>
             <div>
               <div>Balance: </div>
-              <div>{response.data.balance}</div>
+              <div>Ѧ {response.data.balance}</div>
             </div>
             <div>
               <div>Is delegate: </div>

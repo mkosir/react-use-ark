@@ -6,9 +6,13 @@
 
 _React hook to easily access [ARK blockchain Ѧ](https://ark.io/) API._
 
+### Links
+
 ARK API [documentation](https://api.ark.dev/).
 
 ARK blockchain explorer [official website](https://explorer.ark.io/).
+
+Official Client ARK SDK for [TypeScript](https://github.com/ArkEcosystem/typescript-client).
 
 ## Demo
 

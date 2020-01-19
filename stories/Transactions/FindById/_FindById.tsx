@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './FindById.storytab';
+import DocTabTemplate from 'react-doc-tab-template';
+import Demo from './FindById.doctab';
 
 const code = `import React, { useState } from 'react';
 
@@ -60,9 +60,9 @@ export default FindById;
 `;
 
 const _FindById = () => (
-  <StoryTabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StoryTabTemplate>
+  </DocTabTemplate>
 );
 
 export default _FindById;

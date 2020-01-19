@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './AllDevnet.storytab';
+import DocTabTemplate from 'react-doc-tab-template';
+import Demo from './AllDevnet.doctab';
 
 const code = `import React from 'react';
 
@@ -53,9 +53,9 @@ export default AllDevnet;
 `;
 
 const _AllDevnet = () => (
-  <StoryTabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StoryTabTemplate>
+  </DocTabTemplate>
 );
 
 export default _AllDevnet;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './All.storytab';
+import DocTabTemplate from 'react-doc-tab-template';
+import Demo from './All.doctab';
 
 const code = `import React from 'react';
 
@@ -53,9 +53,9 @@ export default All;
 `;
 
 const _All = () => (
-  <StoryTabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StoryTabTemplate>
+  </DocTabTemplate>
 );
 
 export default _All;

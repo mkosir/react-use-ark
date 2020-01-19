@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './FindByAddress.storytab';
+import DocTabTemplate from 'react-doc-tab-template';
+import Demo from './FindByAddress.doctab';
 
 const code = `import React, { useState } from 'react';
 
@@ -35,7 +35,7 @@ const FindByAddress = () => {
             </div>
             <div>
               <div>Balance: </div>
-              <div>{response.data.balance}</div>
+              <div>Ѧ {response.data.balance}</div>
             </div>
             <div>
               <div>Is delegate: </div>
@@ -56,9 +56,9 @@ export default FindByAddress;
 `;
 
 const _FindByAddress = () => (
-  <StoryTabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StoryTabTemplate>
+  </DocTabTemplate>
 );
 
 export default _FindByAddress;

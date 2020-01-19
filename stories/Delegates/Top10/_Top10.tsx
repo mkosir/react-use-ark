@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './Top10.storytab';
+import DocTabTemplate from 'react-doc-tab-template';
+import Demo from './Top10.doctab';
 
 const code = `import React from 'react';
 
@@ -53,9 +53,9 @@ export default Top10;
 `;
 
 const _Top10 = () => (
-  <StoryTabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </StoryTabTemplate>
+  </DocTabTemplate>
 );
 
 export default _Top10;

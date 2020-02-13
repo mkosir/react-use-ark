@@ -2,14 +2,12 @@
   font-family: Arial, sans-serif;
   font-size: 16px;
 
-  .react-tabs {
-    .react-doc-tab-demo.react-tabs__tab-panel--selected {
-      margin-top: 2vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  .tab-demo.react-tabs__tab-panel--selected {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

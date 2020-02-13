@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DocTabTemplate from 'react-doc-tab-template';
-import Demo from './LatestDevnet.doctab';
+import DemoTab from 'react-demo-tab';
+import Demo from './LatestDevnet.demotab';
 
 const code = `import React from 'react';
 
@@ -57,9 +57,9 @@ export default LatestDevnet;
 `;
 
 const _LatestDevnet = () => (
-  <DocTabTemplate code={code} codeExt="tsx">
+  <DemoTab code={code} codeExt="tsx">
     <Demo />
-  </DocTabTemplate>
+  </DemoTab>
 );
 
 export default _LatestDevnet;

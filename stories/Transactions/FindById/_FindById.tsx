@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DocTabTemplate from 'react-doc-tab-template';
-import Demo from './FindById.doctab';
+import DemoTab from 'react-demo-tab';
+import Demo from './FindById.demotab';
 
 const code = `import React, { useState } from 'react';
 
@@ -60,9 +60,9 @@ export default FindById;
 `;
 
 const _FindById = () => (
-  <DocTabTemplate code={code} codeExt="tsx">
+  <DemoTab code={code} codeExt="tsx">
     <Demo />
-  </DocTabTemplate>
+  </DemoTab>
 );
 
 export default _FindById;

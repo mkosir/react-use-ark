@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DocTabTemplate from 'react-doc-tab-template';
-import Demo from './Latest10.doctab';
+import DemoTab from 'react-demo-tab';
+import Demo from './Latest10.demotab';
 
 const code = `import React from 'react';
 
@@ -62,9 +62,9 @@ export default Latest10;
 `;
 
 const _Latest10 = () => (
-  <DocTabTemplate code={code} codeExt="tsx">
+  <DemoTab code={code} codeExt="tsx">
     <Demo />
-  </DocTabTemplate>
+  </DemoTab>
 );
 
 export default _Latest10;

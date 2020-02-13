@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DocTabTemplate from 'react-doc-tab-template';
-import Demo from './Top.doctab';
+import DemoTab from 'react-demo-tab';
+import Demo from './Top.demotab';
 
 const code = `import React from 'react';
 
@@ -52,9 +52,9 @@ export default Top;
 `;
 
 const _Top = () => (
-  <DocTabTemplate code={code} codeExt="tsx">
+  <DemoTab code={code} codeExt="tsx">
     <Demo />
-  </DocTabTemplate>
+  </DemoTab>
 );
 
 export default _Top;

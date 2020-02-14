@@ -16,7 +16,7 @@ Official ARK client SDK for [TypeScript](https://github.com/ArkEcosystem/typescr
 
 ## Demo
 
-**[Live demo & Code examples](https://mkosir.github.io/react-use-ark)** created with [React DemoTab 📑](https://github.com/mkosir/react-demo-tab-cli)
+**[Live demo & Code examples](https://mkosir.github.io/react-use-ark)** created with [React DemoTab 📑](https://github.com/mkosir/react-demo-tab)
 
 ## Install
 

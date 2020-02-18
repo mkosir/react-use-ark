@@ -20,8 +20,7 @@ Official ARK client SDK for [TypeScript](https://github.com/ArkEcosystem/typescr
 
 ## Install
 
-- npm `npm install react-use-ark`
-- yarn `yarn add react-use-ark`
+`npm install react-use-ark`
 
 ## Usage
 

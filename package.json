@@ -41,7 +41,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.0.10",
     "lint-staged": "^9.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^1.19.1",
     "react": "^16.10.2",
     "react-demo-tab": "^1.2.1",
